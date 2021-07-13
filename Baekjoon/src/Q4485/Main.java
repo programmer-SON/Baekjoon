@@ -49,18 +49,10 @@ public class Main {
 				Arrays.fill(dist[i], Integer.MAX_VALUE);
 				for(int j=0; j<N; j++) {
 					map[i][j] = Integer.parseInt(st.nextToken());
-					//System.out.print(map[i][j] + " ");
 				}
-				//System.out.println();
 			}
 			int ans = Dijkstra();			
 			
-/*			for(int i=0; i<N;i++) {
-				for(int j=0; j<N; j++) {
-					System.out.print(dist[i][j] + " ");
-				}
-				System.out.println();
-			}*/
 			System.out.println("Problem " + idx +": " + ans);
 			idx++;
 		}	
