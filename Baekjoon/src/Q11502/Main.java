@@ -1,12 +1,8 @@
 package Q11502;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 import java.io.IOException;
-import java.util.StringTokenizer;
-import java.util.ArrayList;
 
 public class Main {
 
@@ -16,12 +12,10 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		Input();
-		
 	}
 	
 	public static void Input() throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		//BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		StringBuffer sb = new StringBuffer();
 		int T = Integer.parseInt(br.readLine());
 		
@@ -31,15 +25,11 @@ public class Main {
 			int num = Integer.parseInt(br.readLine());
 			if(Solve(num)) {
 				System.out.println(store[0] + " " + store[1] + " " +store[2]);
-			//	bw.write(store[0] + store[1] + store[2]);
 			}else {
-			//	bw.write("0");
 				System.out.println("0");
 			}
 		}
 		
-		//bw.flush();
-		//bw.close();
 		br.close();
 	}
 	
@@ -62,18 +52,8 @@ public class Main {
 		}
 		
 		return false;
-	}
-	
-//	public static void DFS(int count, int target) {
-//		if(count == 3){
-//			return;
-//		}
-//		
-//		for(int i=0; i<1000;i++) {
-//			
-//		}
-//		
-//	}
+	}	
+
 	
 	public static void Eratos() {
 		
